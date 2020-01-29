@@ -32,3 +32,7 @@ Route::namespace('BackEnd')->prefix('admin')->group(function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('category/{id}', 'HomeController@categoryVideos')->name('frontend.category');
+Route::get('skills/{id}', 'HomeController@skillsVideos')->name('frontend.skills');
+Route::get('tags/{id}', 'HomeController@tagsVideos')->name('frontend.tags');
+Route::get('video/{id}', 'HomeController@video')->name('frontend.video');

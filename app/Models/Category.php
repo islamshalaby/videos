@@ -11,4 +11,8 @@ class Category extends Model
         'meta_keywords',
         'meta_description'
     ];
+
+    public function videos() {
+        return $this->hasMany('App\Models\Video');
+    }
 }
