@@ -13,6 +13,7 @@
     <!-- Material Kit CSS -->
     <link href="/public/assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
     @stack('css')
+    
 </head>
 
 <body class="dark-edition">
